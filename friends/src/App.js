@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <Router>
         <Route path="/login" component={Login} />
+        {/* If the user is not logged in, the Private Route will redirect to the Login */}
 
         {/* If the user is not logged in, the Private Route will redirect to the Login */}
         <PrivateRoute exact path="/" component={FriendList} />
